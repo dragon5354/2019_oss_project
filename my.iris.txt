@@ -1,0 +1,8 @@
+my.iris<iris
+for(i in 1:nrow(my.iris)){
+cur_row <- my.iris[1,]
+if(cur_row$Species == " versicolor"){
+my.iris[i,"Petal.width"] <- my.iris[i, "Petal.width"] +100
+}
+}
+view(my.iris)
